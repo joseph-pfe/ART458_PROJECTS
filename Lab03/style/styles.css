@@ -1,0 +1,58 @@
+/* #ssn {
+
+    color: red;
+}
+
+#statusResult {
+
+    color: blue;
+    text-decoration: dashed;
+    text-decoration-line: underline;
+    text-decoration-thickness: 4px;
+} */
+
+/* * {
+
+    outline: 1px solid magenta
+} */
+
+body {
+
+    font-size: 18pt;
+}
+
+
+.blue {
+
+    color: blue;
+}
+
+.red {
+
+    color: red;
+}
+
+.pink {
+
+    color: pink;
+}
+
+.orange {
+
+    color: orange;
+}
+
+.bold {
+
+    font-weight: bold;
+}
+
+.italic {
+
+    font-style: italic;
+}
+
+.center {
+
+    text-align: center;
+}
