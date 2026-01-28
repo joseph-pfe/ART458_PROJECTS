@@ -16,6 +16,55 @@
     outline: 1px solid magenta
 } */
 
+.western {
+
+font-family: "westsac", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.futuristic {
+
+font-family: "stop-mn", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.japanese {
+
+font-family: "shogun", sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+
+.technical {
+
+font-family: "pt-mono", monospace;
+font-weight: 700;
+font-style: normal;
+}
+
+.scary {
+
+font-family: "cc-meltdown", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.barbie {
+
+font-family: "professor-minty", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+
+.hero {
+
+font-family: "amboy-black", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
 body {
 
     font-size: 18pt;
