@@ -88,7 +88,7 @@ body {
 
 .orange {
 
-    color: orange;
+    color: rgb(134, 87, 0);
 }
 
 .bold {
@@ -120,15 +120,23 @@ body {
 
 p.shaded {
 
-    background-color: rgb(126, 89, 89);
+    background-color: rgb(143, 143, 172);
+     max-width: 900px;     
+    margin: 30px auto;    
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 h2.shaded {
 
-    background-color: rgb(227, 227, 227);
+    background-color: rgb(190, 192, 211);
+     max-width: 900px;     
+    margin: 30px auto;    
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 h1#pageTitle {
 
-    color: red;
+    color: rgb(0, 18, 180);
 }
