@@ -1,0 +1,91 @@
+.circle-ease {
+
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    animation-name: circleMove;
+    animation-duration: .5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+.circle-linear {
+
+    position: absolute;
+    top: 0px;
+    left: 400px;
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    transition: 0.3s linear;
+    animation-name: yellowCircleMove;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+
+}
+
+.purple {
+
+        background-color: purple;
+}
+
+.yellow {
+
+        background-color: yellow;
+}
+
+.circle-ease:hover{
+
+    width: 300px;
+    height: 300px;
+
+}
+
+.circle-linear:hover{
+
+    width: 300px;
+    height: 300px;
+
+}
+
+@keyframes circleMove {
+
+    0% {
+        transform: translateY(80vh);
+        height: 200px;
+    }
+
+    20% {
+        transform: translateY(80vh);
+        height: 200px
+    }
+
+    100% {
+        transform: translateY(0px);
+        height: 200px;
+    }
+}
+
+@keyframes yellowCircleMove {
+
+    0% {
+        transform: translateY(80vh);
+        height: 200px;
+    }
+
+    20% {
+        transform: translateY(80vh);
+        height: 200px
+    }
+
+    100% {
+        transform: translateY(0px);
+        height: 200px;
+    }
+}
