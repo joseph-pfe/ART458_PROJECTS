@@ -7,7 +7,7 @@ body, html {
     overflow-x: hidden;
 }
 
-/* home page */
+/* home page mostly condensed because im pretty happy with it */
 .home-body { background-image: url("../composition.avif"); background-repeat: repeat; display: flex; }
 aside { background-color: #000; width: 10vw; min-height: 100vh; flex-shrink: 0; }
 .main-container { flex-grow: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 60px 20px; }
@@ -27,11 +27,11 @@ aside { background-color: #000; width: 10vw; min-height: 100vh; flex-shrink: 0; 
 .sticker-label { background: white; color: black; padding: 4px 14px; margin-top: 15px; font-family: 'Inter', sans-serif; font-size: 1.4rem; border: 1px solid #ccc; box-shadow: 2px 2px 0px rgba(0,0,0,0.1); }
 .home-label { background: black; color: white; font-weight: bold; }
 
-/* works page */
+/* works page stuff */
 .ruled-page-bg {
-    background-image: url("../ruled-paper.jpg");
-    background-size: cover;
-    background-attachment: fixed;
+    background-image: url("../dotted-paper.png");
+    background-repeat: repeat;
+    display: flex; 
 }
 
 .inner-content-wrapper {
@@ -78,7 +78,6 @@ aside { background-color: #000; width: 10vw; min-height: 100vh; flex-shrink: 0; 
     font-weight: 700;
     font-size: 4.2rem;
     padding: 15px 60px;
-    text-transform: lowercase;
     box-shadow: 4px 4px 0px rgba(0,0,0,0.2);
 }
 
@@ -119,14 +118,16 @@ aside { background-color: #000; width: 10vw; min-height: 100vh; flex-shrink: 0; 
     box-shadow: 8px 10px 20px rgba(0,0,0,0.15);
 }
 
-.portfolio-item:nth-child(odd) img { transform: rotate(-2deg); }
-.portfolio-item:nth-child(even) img { transform: rotate(2deg); }
+.portfolio-item:nth-child(odd) { transform: rotate(-2deg); }
+.portfolio-item:nth-child(even) { transform: rotate(2deg); }
+.portfolio-item:hover { transform: scale(1.05) !important; }
 
 .portfolio-caption {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Inter', sans-serif;
     font-size: 2.2rem;
     margin-top: 15px;
     color: #111;
+    text-decoration: none;
 }
 
 .bottom-nav-row {
@@ -149,7 +150,14 @@ aside { background-color: #000; width: 10vw; min-height: 100vh; flex-shrink: 0; 
 
 .nav-link-btn:hover { background: #fff; }
 
-/* Mobile Formatting */
+.content-area {
+
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    line-height: 2;
+}
+
+/* mobile */
 @media (max-width: 950px) {
     .work-header { grid-template-columns: 1fr; gap: 30px; }
     .header-wing-left, .header-center-box, .header-wing-right { justify-content: center; }
