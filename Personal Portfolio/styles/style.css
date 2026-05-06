@@ -27,11 +27,10 @@ aside { background-color: #000; width: 10vw; min-height: 100vh; flex-shrink: 0; 
 .sticker-label { background: white; color: black; padding: 4px 14px; margin-top: 15px; font-family: 'Inter', sans-serif; font-size: 1.4rem; border: 1px solid #ccc; box-shadow: 2px 2px 0px rgba(0,0,0,0.1); }
 .home-label { background: black; color: white; font-weight: bold; }
 
-/* works page stuff */
 .ruled-page-bg {
     background-image: url("../dotted-paper.png");
     background-repeat: repeat;
-    display: flex; 
+    display: flex;
 }
 
 .inner-content-wrapper {
@@ -100,7 +99,7 @@ aside { background-color: #000; width: 10vw; min-height: 100vh; flex-shrink: 0; 
     justify-content: center;
     gap: 80px 40px;
     width: 100%;
-    max-width: 1050px; /* limits width to force 3 items on row 1 */
+    max-width: 1050px;
 }
 
 .portfolio-item {
@@ -130,11 +129,21 @@ aside { background-color: #000; width: 10vw; min-height: 100vh; flex-shrink: 0; 
     text-decoration: none;
 }
 
+.portfolio-item,
+.portfolio-item:visited,
+.portfolio-item:hover,
+.portfolio-item:active {
+    color: #111;
+    text-decoration: none;
+}
+
 .bottom-nav-row {
     margin-top: 80px;
     display: flex;
     gap: 20px;
     padding-bottom: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .nav-link-btn {
@@ -151,16 +160,152 @@ aside { background-color: #000; width: 10vw; min-height: 100vh; flex-shrink: 0; 
 .nav-link-btn:hover { background: #fff; }
 
 .content-area {
-
     font-family: 'Inter', sans-serif;
     font-size: 22px;
     line-height: 2;
 }
 
-/* mobile */
+.project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+    margin-bottom: 50px;
+    padding-bottom: 0;
+}
+
+.go-back-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background: #f0f0f0;
+    border: 1px solid #bbb;
+    padding: 10px 22px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: background 0.2s;
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.08);
+}
+
+.go-back-btn:hover { background: #fff; }
+
+.project-title-handwritten {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    line-height: 1;
+    margin: 0;
+    color: #111;
+    text-align: right;
+}
+
+.project-content {
+    width: 100%;
+    max-width: 1100px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.85;
+    color: #111;
+}
+
+.project-content h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 40px 0 10px 0;
+}
+
+.project-content p {
+    margin: 0 0 20px 0;
+}
+
+.project-content ul,
+.project-content ol {
+    padding-left: 1.4em;
+    margin: 0 0 20px 0;
+}
+
+.project-content li {
+    margin-bottom: 6px;
+    list-style: disc;
+    display: list-item;
+}
+
+.project-content img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    max-height: 90vh;
+    height: auto;
+    object-fit: contain;
+    margin: 24px auto;
+    box-sizing: border-box;
+}
+
+.image-row {
+    display: flex;
+    gap: 16px;
+    margin: 24px 0;
+    align-items: flex-start;
+}
+
+.image-row img {
+    flex: 1;
+    width: 0;
+    max-width: 100%;
+    max-height: 70vh;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    .image-row {
+        flex-direction: column;
+    }
+    .image-row img {
+        width: auto;
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 950px) {
     .work-header { grid-template-columns: 1fr; gap: 30px; }
     .header-wing-left, .header-center-box, .header-wing-right { justify-content: center; }
     .hero-apple { width: 180px; margin-bottom: 0; }
     .header-signature { text-align: center; }
+
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .project-title-handwritten {
+        font-size: clamp(1.8rem, 7vw, 3rem);
+        text-align: left;
+    }
+}
+
+@media (max-width: 600px) {
+    .inner-content-wrapper {
+        padding: 24px 14px;
+    }
+
+    .project-content {
+        font-size: 1rem;
+    }
+
+    .bottom-nav-row {
+        gap: 12px;
+        margin-top: 50px;
+    }
+
+    .nav-link-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
 }
