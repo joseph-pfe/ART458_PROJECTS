@@ -27,6 +27,17 @@ aside { background-color: #000; width: 10vw; min-height: 100vh; flex-shrink: 0; 
 .sticker-label { background: white; color: black; padding: 4px 14px; margin-top: 15px; font-family: 'Inter', sans-serif; font-size: 1.4rem; border: 1px solid #ccc; box-shadow: 2px 2px 0px rgba(0,0,0,0.1); }
 .home-label { background: black; color: white; font-weight: bold; }
 
+@media (max-width: 700px) {
+    aside { display: none; }
+    .main-container { padding: 40px 16px; }
+    .notebook-label { padding: 16px 24px; margin-bottom: 40px; }
+    .label-top-text { font-size: 13px; letter-spacing: 1px; }
+    .squiggle { font-size: 28px; }
+    .sticker-container { gap: 28px 32px; max-width: 100%; }
+    .sticker { width: clamp(100px, 36vw, 180px); }
+    .sticker-label { font-size: 1rem; }
+}
+
 .ruled-page-bg {
     background-image: url("../dotted-paper.png");
     background-repeat: repeat;
